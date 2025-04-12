@@ -28,7 +28,7 @@ CREATE TABLE Eventos (
   lugar_id int NOT NULL,
   evento varchar(50) NOT NULL,
   descripcion text NOT NULL,
-  fecha_evento datetime
+  fecha_evento timestamp
 );
 
 CREATE TABLE Asientos (
@@ -44,8 +44,8 @@ CREATE TABLE Reservas (
   evento_id int NOT NULL,
   estado_id int NOT NULL,
   precio_total decimal(10,2) NOT NULL,
-  creado_en datetime NOT NULL,
-  actualizado_en datetime NOT NULL
+  creado_en timestamp NOT NULL,
+  actualizado_en timestamp NOT NULL
 );
 
 CREATE TABLE ReservaDetalle (
