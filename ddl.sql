@@ -1,30 +1,30 @@
 CREATE TABLE Usuarios (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   nombre varchar(50) NOT NULL,
   correo varchar(50) NOT NULL,
   numero varchar(50) NOT NULL
 );
 
 CREATE TABLE Estados (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   estado varchar(50) NOT NULL
 );
 
 CREATE TABLE Lugares (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   lugar varchar(50) NOT NULL,
   direccion varchar(100) NOT NULL,
   capacidad int NOT NULL
 );
 
 CREATE TABLE Categorias (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   categoria varchar(50) NOT NULL,
   precio decimal(10,2) NOT NULL
 );
 
 CREATE TABLE Eventos (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   lugar_id int NOT NULL,
   evento varchar(50) NOT NULL,
   descripcion text NOT NULL,
@@ -32,14 +32,14 @@ CREATE TABLE Eventos (
 );
 
 CREATE TABLE Asientos (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   lugar_id int NOT NULL,
   categoria_id int NOT NULL,
   ubicacion varchar(100)
 );
 
 CREATE TABLE Reservas (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   usuario_id int NOT NULL,
   evento_id int NOT NULL,
   estado_id int NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE Reservas (
 );
 
 CREATE TABLE ReservaDetalle (
-  id int PRIMARY KEY,
+  id int SERIAL PRIMARY KEY,
   reserva_id int NOT NULL,
   asiento_id int NOT NULL
 );
