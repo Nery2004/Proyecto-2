@@ -1,32 +1,32 @@
 CREATE TABLE Usuarios (
   id int PRIMARY KEY,
-  nombre varchar(100) NOT NULL,
-  correo varchar(100) NOT NULL,
-  numero varchar(100) NOT NULL
+  nombre varchar(50) NOT NULL,
+  correo varchar(50) NOT NULL,
+  numero varchar(50) NOT NULL
 );
 
 CREATE TABLE Estados (
   id int PRIMARY KEY,
-  estado varchar(100) NOT NULL
+  estado varchar(50) NOT NULL
 );
 
 CREATE TABLE Lugares (
   id int PRIMARY KEY,
-  lugar varchar(100) NOT NULL,
+  lugar varchar(50) NOT NULL,
   direccion varchar(100) NOT NULL,
   capacidad int NOT NULL
 );
 
 CREATE TABLE Categorias (
   id int PRIMARY KEY,
-  categoria varchar(100) NOT NULL,
+  categoria varchar(50) NOT NULL,
   precio decimal(10,2) NOT NULL
 );
 
 CREATE TABLE Eventos (
   id int PRIMARY KEY,
   lugar_id int NOT NULL,
-  evento varchar(100) NOT NULL,
+  evento varchar(50) NOT NULL,
   descripcion text NOT NULL,
   fecha_evento datetime
 );
