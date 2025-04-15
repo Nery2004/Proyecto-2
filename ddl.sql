@@ -36,7 +36,7 @@ CREATE TABLE Asientos (
   lugar_id int NOT NULL,
   categoria_id int NOT NULL,
   ubicacion varchar(100),
-  disponible boolean default true,
+  disponible boolean default true
 );
 
 CREATE TABLE Reservas (
