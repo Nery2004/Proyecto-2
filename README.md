@@ -85,6 +85,14 @@ Sigue las instrucciones que aparecen en consola. El menú te permitirá ejecutar
 
 ---
 
+## 📎 Informe del Proyecto
+
+Puedes consultar el informe completo del proyecto en el siguiente enlace:
+
+[📄 Ver Informe del Proyecto](https://docs.google.com/document/d/1uIf2PTGPiybQlxxg5gLuptojGWXgvdKGLRGp5Ez-rns/edit?usp=sharing)
+
+---
+
 👍 Si tienes dudas o errores, revisa que:
 - Las credenciales en `.env` sean correctas
 - La base de datos esté corriendo
