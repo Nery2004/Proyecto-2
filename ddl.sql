@@ -28,14 +28,15 @@ CREATE TABLE Eventos (
   lugar_id int NOT NULL,
   evento varchar(50) NOT NULL,
   descripcion text NOT NULL,
-  fecha_evento timestamp NOT NULL default current_timestamp,
+  fecha_evento timestamp NOT NULL default current_timestamp
 );
 
 CREATE TABLE Asientos (
   id  SERIAL PRIMARY KEY,
   lugar_id int NOT NULL,
   categoria_id int NOT NULL,
-  ubicacion varchar(100)
+  ubicacion varchar(100),
+  disponible boolean default true,
 );
 
 CREATE TABLE Reservas (
