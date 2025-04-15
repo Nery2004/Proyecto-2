@@ -51,16 +51,24 @@ pip install python-dotenv psycopg2
 
 ## 5. 🗓️ Verifica la Base de Datos
 
-Asegúrate de tener creada y corriendo tu base de datos en PostgreSQL. Si el proyecto incluye scripts SQL para la estructura inicial, ejecútelos antes de continuar.
+Asegúrate de tener creada y corriendo tu base de datos en PostgreSQL. 
+
+Es **importante** ejecutar los siguientes archivos SQL **en orden** para preparar correctamente la estructura de la base de datos:
+
+1. `ddl.sql` – Define las tablas y estructuras principales.
+2. `triggers.sql` – Crea los triggers necesarios para la lógica del sistema.
+3. `data.sql` – Inserta los datos iniciales necesarios para la simulación.
+
+Puedes ejecutar estos scripts utilizando una herramienta como `psql` o PgAdmin.
 
 ---
 
 ## 6. 🚀 Ejecutar la Simulación
 
-Corre el script principal (por ejemplo `main.py` o el que tenga el menú principal):
+Corre el script principal (que seria el `Proyecto2.py`):
 
 ```bash
-python main.py
+python Proyecto2.py
 ```
 
 > Asegúrate de que el archivo carga correctamente las variables de entorno con:
@@ -85,5 +93,5 @@ Sigue las instrucciones que aparecen en consola. El menú te permitirá ejecutar
 
 ---
 
-📄 Proyecto creado por Nery2004,Dernait y Albu231311
+📄 Proyecto creado por Nery2004
 
