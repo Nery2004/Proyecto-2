@@ -93,5 +93,6 @@ Sigue las instrucciones que aparecen en consola. El menú te permitirá ejecutar
 
 ---
 
-📄 Proyecto creado por Nery2004
+📄 Proyecto creado por Nery2004, Dernait y Albu231311
+
 
